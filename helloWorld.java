@@ -12,7 +12,7 @@ name = new String();
  }
  
 public helloWorld(String nm){
- name = new String();
+ name = new String()
  this.name=nm;
  }
 	public static void main(String[] args) {
