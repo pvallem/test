@@ -21,9 +21,6 @@ public class helloWorld {
 		helloWorld hW = new helloWorld("Hi created a hello world program");
 		print(hW.name);
 
-		helloWorld hW1 = new helloWorld();
-		print(hW.name);
-
 	}
 
 	private static String name;
