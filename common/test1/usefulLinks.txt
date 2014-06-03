@@ -2,3 +2,8 @@ http://stackoverflow.com/questions/5243593/how-to-trigger-a-build-only-if-change
 
 #the above link has a way to build only the job which is committed last time
 # but holds the defect if there are multiplr defectes before polling only last one will be build... need to check for the better way
+
+
+git diff $(git rev-list -n1 --before="3 minutes ago" master) | grep ^+++ 
+
+#the above command can be used to find all chnages from the last poll
