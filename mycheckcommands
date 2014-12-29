@@ -1,6 +1,5 @@
 # Here i will write the commands which newly learnt
-sudo apt-get install sshpass
-#ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com -pw nyadav2014 << EOF
-#cd /local/load_test/
-#ls -ltr
-#EOF
+sshpass -p nyadav2014 'ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF
+cd /local/load_test/
+ls -ltr
+EOF'
