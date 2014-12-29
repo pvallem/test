@@ -1,4 +1,5 @@
 # Here i will write the commands which newly learnt
-ssh jenkins@jenkins-load-test.tetrationanalytics.com
+ssh jenkins@jenkins-load-test.tetrationanalytics.com << EOF
 cd /local/load_test/
 ls -ltr
+EOF
