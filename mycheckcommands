@@ -3,4 +3,5 @@ whoami
 ssh -t -t jenkins-vm.tetrationanalytics.com << EOF
 cd /home/jenkins
 ls -ltr
+exit
 EOF
