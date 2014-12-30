@@ -2,5 +2,5 @@
 whoami
 ssh -t -t jenkins-vm.tetrationanalytics.com << EOF
 cd /home/jenkins/jenkins_group_install
-cat `ls -ltr | tail -1 | awk '{print $9}'`
+ls -ltr
 EOF
