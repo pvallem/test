@@ -1,6 +1,7 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF
+ls -ltr /var/log
 touch /var/log/integration_test/makelog
 exit
 EOF
