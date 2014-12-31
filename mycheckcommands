@@ -1,7 +1,8 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF
-ls -ltr /var/log
+#ls -ltr /var/log
+sudo chown jenkins:jenkins /var/log/integration_test
 touch /var/log/integration_test/makelog
 exit
 EOF
