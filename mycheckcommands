@@ -2,7 +2,7 @@
 whoami
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF
 #ls -ltr /var/log
-sudo chown jenkins:jenkins /var/log/integration_test
+sudo chown -R jenkins:jenkins /var/log/integration_test/
 touch /var/log/integration_test/makelog
 exit
 EOF
