@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 whoami
-ssh -t -t root@jenkins-load-test.tetrationanalytics.com << EOF
-chmod 777 /local/integration_test_logs
+ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF
+sudo chmod 777 /local/integration_test_logs
 exit
 EOF
