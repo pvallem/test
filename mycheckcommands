@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF
-cat /var/log/integration_test/integration_test_results_20150103_155447.html 
+ls -ltr /home/jenkins/jenkins-group-install/ 
 exit
 EOF
