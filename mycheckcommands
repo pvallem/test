@@ -1,7 +1,10 @@
 # Here i will write the commands which newly learnt
 whoami
+ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
 ssh -t -t jenkins@jenkins-slave4-vm.tetrationanalytics.com << EOF
 ls -ltr
 
 exit
 EOF
+exit
+EOF1
