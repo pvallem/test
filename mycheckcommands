@@ -1,6 +1,10 @@
 # Here i will write the commands which newly learnt
 whoami
-ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF
-cat /home/jenkins/jenkins_group_install/slave_ip_names
+ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF
+cat /home/pvallem/.ssh/id_rsa
+
+echo "########################################\n"
+cat /home/pvallem/.ssh/id_rsa.pub
+
 exit
 EOF
