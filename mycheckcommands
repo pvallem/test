@@ -1,7 +1,7 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF
-cat /home/pvallem/.ssh/id_rsa
+ls -ltr /home/pvallem/.ssh
 
 echo "########################################\n"
 cat /home/pvallem/.ssh/id_rsa.pub
