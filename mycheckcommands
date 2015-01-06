@@ -1,10 +1,7 @@
 # Here i will write the commands which newly learnt
 whoami
-ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF
-cat /home/tetter/.ssh/id_rsa
-
-echo "########################################\n"
-cat /home/tetter/.ssh/id_rsa.pub
+ssh -t -t jenkins@jenkins-slave-4.tetrationanalytics.com << EOF
+ls -ltr
 
 exit
 EOF
