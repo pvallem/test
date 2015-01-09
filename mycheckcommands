@@ -1,10 +1,7 @@
 # Here i will write the commands which newly learnt
 whoami
-ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-ssh -t -t -o StrictHostKeyChecking=no jenkins@jenkins-slave3-vm.tetrationanalytics.com << EOF
+ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
+cd /local/load_test/results
 ls -ltr
-
-exit
-EOF
 exit
 EOF1
