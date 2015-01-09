@@ -4,6 +4,6 @@ ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 ps -ef | grep Collector
 
 echo ####################
-
+ps -ef | grep host-sensor
 exit
 EOF1
