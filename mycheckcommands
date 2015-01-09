@@ -1,7 +1,7 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-cd /var/log/load_test
-cat load_test_20150108_010312.log
+cd /local/jenkins/workspace
+ls -ltr
 exit
 EOF1
