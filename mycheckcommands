@@ -2,6 +2,6 @@
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 cd /var/log/load_test
-cat `ls -ltr load_test.* | tail -1 |awk '{print $9}'`
+ls -ltr
 exit
 EOF1
