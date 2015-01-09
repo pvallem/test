@@ -1,7 +1,9 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-cd /local/jenkins/workspace
-ls -ltr
+cd /local/jenkins/workspace/CollectorLoadTest/test_framework/src/load_test
+make clean
+make
+python collector_load_tester.py -f /local/load_test/loadtest.config &
 exit
 EOF1
