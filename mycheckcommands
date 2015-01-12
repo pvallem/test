@@ -2,6 +2,7 @@
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 cd /local/load_test
-./host-sensor -a 127.0.0.1 -p 5640 -i eth0
+./host-sensor -a 127.0.0.1 -p 5640 -i eth0 &
+sleep 15
 exit
 EOF1
