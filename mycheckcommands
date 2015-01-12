@@ -1,7 +1,6 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-cd /local/load_test
-ps -ef | grep host-sensor
+sudo kill -9 13192 13256 13262
 exit
 EOF1
