@@ -3,5 +3,9 @@ whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 cd /var/log/load_test
 cat latest_log_file
+
+echo "###################################################"
+cd /local/load_test/results
+ls -ltr
 exit
 EOF1
