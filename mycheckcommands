@@ -2,13 +2,6 @@
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 cd /local/load_test
-rm -rf 1 2 3 0 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 pcap_sensor_config1_0 pcap_sensor_config1_1
-rm -rf pcap_sensor_config1_2 pcap_sensor_config1_3 pcap_sensor_config1_4 pcap_sensor_config1_5 pcap_sensor_config1_6
-rm -rf pcap_sensor_config1_7 pcap_sensor_config1_8 pcap_sensor_config1_9 pcap_sensor_config1_10
-rm -rf pcap_sensor_config1_11 pcap_sensor_config1_12 pcap_sensor_config1_13 pcap_sensor_config1_14 pcap_sensor_config1_15
-rm -rf pcap_sensor_config1_16 pcap_sensor_config1_17 pcap_sensor_config1_18 pcap_sensor_config1_19 pcap_sensor_config1_20
-rm -rf pcap_sensor_config1_21 pcap_sensor_config1_22 pcap_sensor_config1_23 pcap_sensor_config1_24 pcap_sensor_config1_25
-rm -rf pcap_sensor_config1_26 pcap_sensor_config1_27 pcap_sensor_config1_28 pcap_sensor_config1_29
-cat loadtest.config
+cat /local/load_test/pcap_sensor_config1
 exit
 EOF1
