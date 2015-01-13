@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-sudo kill -9 13192 13256 13262
+ls -ltr /local/load_test/results
 exit
 EOF1
