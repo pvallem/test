@@ -1,6 +1,8 @@
 # Here i will write the commands which newly learnt
 whoami
 ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF1
-ls /usr/local/lib/
+locate trivial.hpp
+
+sudo find / -name trivial.hpp
 exit
 EOF1
