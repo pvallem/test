@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 whoami
-ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF1
-cat /etc/apt/sources.list
+ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
+cat /local/load_test/results/latest*
 exit
 EOF1
