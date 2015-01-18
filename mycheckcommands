@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 whoami
-ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF1
-python --version
+ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
+cat /var/log/integration_test/latest_html_file
 exit
 EOF1
