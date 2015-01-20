@@ -1,9 +1,6 @@
 # Here i will write the commands which newly learnt
 ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF1
-cd ~/tetration/src/sensor/ovs
-gcc --version
-make clean
-make test
+uname -a
 echo $?
 exit
 EOF1
