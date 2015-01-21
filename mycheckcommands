@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
-ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF1
-uname -a
-echo $?
+ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
+cd /local/jenkins
+ls
 exit
 EOF1
