@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
 cd /local/jenkinsBackup
-ls
+cat remove_log_files.sh
 exit
 EOF1
