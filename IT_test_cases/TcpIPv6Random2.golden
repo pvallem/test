@@ -1,9 +1,9 @@
 flow_info {
   key {
-    src_address: "]\206\032\346\253\'\331\226\241\360\350\227\372\336\207-"
-    dst_address: "\004\002\\}\271\273R\224\nJ\267Q$\236+\271"
-    src_port: 46080
-    dst_port: 8854
+    src_address: "\3649\345\\\242\350p\t`\250J\227\203J\3422"
+    dst_address: "\000U\221S\\\241\310\222\275\034%\232\032-x\030"
+    src_port: 46820
+    dst_port: 40220
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
@@ -25,24 +25,4 @@ flow_info {
     packet_count: 1
   }
   end_time: 1388563200000000
-}
-flow_info {
-  key {
-    src_address: "\324\326?af\301\027\027%\236\321\377\264!\330\177"
-    dst_address: "kR\373\204\334\tV\006q\331_.\216\016^\315"
-    src_port: 56376
-    dst_port: 55576
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200075178
-    key_type: IPV6
-  }
-  start_time: 1388563200075178
-  ip_info {
-    qos: 0
-  }
-  flow_features {
-    packet_count: 1
-  }
-  end_time: 1388563200075178
 }

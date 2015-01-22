@@ -1,9 +1,9 @@
 flow_info {
   key {
-    src_address: "\010\365\273\016"
-    dst_address: "\024r\265\200"
-    src_port: 8760
-    dst_port: 56376
+    src_address: "\003\345\t\265"
+    dst_address: "\177\253\026\374"
+    src_port: 7137
+    dst_port: 42012
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
@@ -28,36 +28,36 @@ flow_info {
 }
 flow_info {
   key {
-    src_address: "k\037\3357"
-    dst_address: "\301\247\227\263"
-    src_port: 44930
-    dst_port: 40889
+    src_address: "y\352rd"
+    dst_address: "\225\346n\231"
+    src_port: 33528
+    dst_port: 13210
     proto: 6
-    tenant_id: 20
-    flow_start_time: 1388563200047548
+    tenant_id: 10
+    flow_start_time: 1388563200041138
     key_type: IPV4
   }
-  start_time: 1388563200047548
+  start_time: 1388563200041138
   ip_info {
     qos: 0
   }
   flow_features {
     packet_count: 1
   }
-  end_time: 1388563200047548
+  end_time: 1388563200041138
 }
 flow_info {
   key {
-    src_address: "\021-\212\277"
-    dst_address: "M\235r\022"
-    src_port: 25065
-    dst_port: 16989
+    src_address: "g\364\013\206"
+    dst_address: "Q\270E^"
+    src_port: 21705
+    dst_port: 45373
     proto: 6
-    tenant_id: 30
-    flow_start_time: 1388563200095096
+    tenant_id: 10
+    flow_start_time: 1388563200082276
     key_type: IPV4
   }
-  start_time: 1388563200095096
+  start_time: 1388563200082276
   ip_info {
     last_cached_ttl: 8
     qos: 0
@@ -72,25 +72,417 @@ flow_info {
   flow_features {
     packet_count: 1
   }
-  end_time: 1388563200095096
+  end_time: 1388563200082276
 }
 flow_info {
   key {
-    src_address: "\010\365\273\016"
-    dst_address: "x\221.\227"
-    src_port: 40889
-    dst_port: 25963
+    src_address: "\003\345\t\265"
+    dst_address: "\214\360]\274"
+    src_port: 62932
+    dst_port: 52014
     proto: 6
     tenant_id: 10
-    flow_start_time: 1388563200142644
+    flow_start_time: 1388563200123414
     key_type: IPV4
   }
-  start_time: 1388563200142644
+  start_time: 1388563200123414
   ip_info {
     qos: 0
   }
   flow_features {
     packet_count: 1
   }
-  end_time: 1388563200142644
+  end_time: 1388563200123414
+}
+flow_info {
+  key {
+    src_address: "y\352rd"
+    dst_address: "bXd\247"
+    src_port: 42012
+    dst_port: 19989
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200164552
+    key_type: IPV4
+  }
+  start_time: 1388563200164552
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 40
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200164552
+}
+flow_info {
+  key {
+    src_address: "g\364\013\206"
+    dst_address: "\177\253\026\374"
+    src_port: 36001
+    dst_port: 20595
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200165552
+    key_type: IPV4
+  }
+  start_time: 1388563200165552
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200165552
+}
+flow_info {
+  key {
+    src_address: "\003\345\t\265"
+    dst_address: "\225\346n\231"
+    src_port: 20595
+    dst_port: 7137
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200206690
+    key_type: IPV4
+  }
+  start_time: 1388563200206690
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 60
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200206690
+}
+flow_info {
+  key {
+    src_address: "y\352rd"
+    dst_address: "Q\270E^"
+    src_port: 7137
+    dst_port: 39158
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200247828
+    key_type: IPV4
+  }
+  start_time: 1388563200247828
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200247828
+}
+flow_info {
+  key {
+    src_address: "g\364\013\206"
+    dst_address: "\214\360]\274"
+    src_port: 33528
+    dst_port: 36001
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200288966
+    key_type: IPV4
+  }
+  start_time: 1388563200288966
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 80
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200288966
+}
+flow_info {
+  key {
+    src_address: "\003\345\t\265"
+    dst_address: "bXd\247"
+    src_port: 21705
+    dst_port: 38055
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200330104
+    key_type: IPV4
+  }
+  start_time: 1388563200330104
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200330104
+}
+flow_info {
+  key {
+    src_address: "y\352rd"
+    dst_address: "\177\253\026\374"
+    src_port: 62932
+    dst_port: 14118
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200331104
+    key_type: IPV4
+  }
+  start_time: 1388563200331104
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 100
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200331104
+}
+flow_info {
+  key {
+    src_address: "g\364\013\206"
+    dst_address: "\225\346n\231"
+    src_port: 42012
+    dst_port: 42012
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200372242
+    key_type: IPV4
+  }
+  start_time: 1388563200372242
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200372242
+}
+flow_info {
+  key {
+    src_address: "\003\345\t\265"
+    dst_address: "Q\270E^"
+    src_port: 36001
+    dst_port: 13210
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200413380
+    key_type: IPV4
+  }
+  start_time: 1388563200413380
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 120
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200413380
+}
+flow_info {
+  key {
+    src_address: "y\352rd"
+    dst_address: "\214\360]\274"
+    src_port: 20595
+    dst_port: 45373
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200454518
+    key_type: IPV4
+  }
+  start_time: 1388563200454518
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200454518
+}
+flow_info {
+  key {
+    src_address: "g\364\013\206"
+    dst_address: "bXd\247"
+    src_port: 7137
+    dst_port: 52014
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200495656
+    key_type: IPV4
+  }
+  start_time: 1388563200495656
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 140
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200495656
+}
+flow_info {
+  key {
+    src_address: "\003\345\t\265"
+    dst_address: "\177\253\026\374"
+    src_port: 33528
+    dst_port: 19989
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200496656
+    key_type: IPV4
+  }
+  start_time: 1388563200496656
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 150
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200496656
+}
+flow_info {
+  key {
+    src_address: "y\352rd"
+    dst_address: "\225\346n\231"
+    src_port: 21705
+    dst_port: 20595
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200537794
+    key_type: IPV4
+  }
+  start_time: 1388563200537794
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200537794
+}
+flow_info {
+  key {
+    src_address: "g\364\013\206"
+    dst_address: "Q\270E^"
+    src_port: 62932
+    dst_port: 7137
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200578932
+    key_type: IPV4
+  }
+  start_time: 1388563200578932
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 170
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200578932
+}
+flow_info {
+  key {
+    src_address: "\003\345\t\265"
+    dst_address: "\214\360]\274"
+    src_port: 42012
+    dst_port: 39158
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200620070
+    key_type: IPV4
+  }
+  start_time: 1388563200620070
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200620070
+}
+flow_info {
+  key {
+    src_address: "y\352rd"
+    dst_address: "bXd\247"
+    src_port: 36001
+    dst_port: 36001
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200661208
+    key_type: IPV4
+  }
+  start_time: 1388563200661208
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 190
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200661208
 }
