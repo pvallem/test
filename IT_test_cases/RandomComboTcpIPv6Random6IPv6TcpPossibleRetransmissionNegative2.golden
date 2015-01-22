@@ -1,0 +1,104 @@
+flow_info {
+  key {
+    src_address: "\257djL\367n\257OZ*\226E.\001\002\034"
+    dst_address: "g\316g\270\364E\217O*G\300{\323\324\345\272"
+    src_port: 31586
+    dst_port: 30400
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000000
+    key_type: IPV6
+  }
+  start_time: 1388563200000000
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 0
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200000000
+}
+flow_info {
+  key {
+    src_address: "\001\002\003\004\000\000\000\000\000\000\000\000\000\000\000\000"
+    dst_address: "\005\006\007\010\000\000\000\000\000\000\000\000\000\000\000\000"
+    src_port: 111
+    dst_port: 222
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000010
+    key_type: IPV6
+  }
+  start_time: 1388563200000010
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 2
+  }
+  end_time: 1388563200000030
+}
+flow_info {
+  key {
+    src_address: "e\346u\300\335\034\245\343\'\331\035\351\311\035\332\212"
+    dst_address: "*\2704X\010\333\304d\002cV\032L#*\334"
+    src_port: 59165
+    dst_port: 29687
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000020
+    key_type: IPV6
+  }
+  start_time: 1388563200000020
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 10
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200000020
+}
+flow_info {
+  key {
+    src_address: "\210d\2343\202\036\241\224X\365\025(~7\275c"
+    dst_address: "\277\230.0G\372\307\233\266\317\332\323\336\2166\213"
+    src_port: 44466
+    dst_port: 53296
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000040
+    key_type: IPV6
+  }
+  start_time: 1388563200000040
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 20
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200000040
+}
