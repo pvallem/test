@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-cd /local/jenkins/builds/SparkBDUnitTest/101
+cat /local/jenkins/builds/SparkBDUnitTest/101/log
 ls -ltr
 exit
 EOF1
