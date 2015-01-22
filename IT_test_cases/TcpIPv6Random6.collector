@@ -1,15 +1,38 @@
 bidir_flow_info {
   key {
-    src_address: "\213\215\021\202\327\355\321\036WE\232\030\232\033\256\375"
-    dst_address: "\332\344m\220\275(\366!\221C\002\243\351\022}m"
-    src_port: 65390
-    dst_port: 25340
+    src_address: ":\"y\016,w\326\002\005\177\314\367\336\230L="
+    dst_address: "\355W\377\3478\212\341\340\207jG\221\225\221 \310"
+    src_port: 35735
+    dst_port: 43633
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200084730
+    key_type: IPV6
+  }
+  reverse_flow_info {
+    start_time: 1388563200084730
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200084730
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\222L\035\260VI\367B\303\016\273\022\274Y\360\225"
+    dst_address: "\332\274\256\246\037\317b%\020>\275\035\242z#\017"
+    src_port: 10865
+    dst_port: 33960
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
     key_type: IPV6
   }
-  reverse_flow_info {
+  flow_info {
     start_time: 1388563200000000
     ip_info {
       last_cached_ttl: 8
