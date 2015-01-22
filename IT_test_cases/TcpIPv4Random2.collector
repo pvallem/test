@@ -1,15 +1,69 @@
 bidir_flow_info {
   key {
-    src_address: "#\262v\251"
-    dst_address: "x\302\363%"
-    src_port: 65274
-    dst_port: 35858
+    src_address: "\245xW\313"
+    dst_address: "\321\303ls"
+    src_port: 51440
+    dst_port: 50658
+    proto: 6
+    tenant_id: 20
+    flow_start_time: 1388563200075706
+    key_type: IPV4
+  }
+  flow_info {
+    start_time: 1388563200075706
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200075706
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\'&\213\235"
+    dst_address: "V\010Ya"
+    src_port: 50393
+    dst_port: 22410
+    proto: 6
+    tenant_id: 30
+    flow_start_time: 1388563200151412
+    key_type: IPV4
+  }
+  flow_info {
+    start_time: 1388563200151412
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 20
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200151412
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "~\212\274O"
+    dst_address: "\331\355\305l"
+    src_port: 61792
+    dst_port: 33910
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
     key_type: IPV4
   }
-  reverse_flow_info {
+  flow_info {
     start_time: 1388563200000000
     ip_info {
       last_cached_ttl: 8
@@ -26,29 +80,6 @@ bidir_flow_info {
       packet_count: 1
     }
     end_time: 1388563200000000
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\227\244\204\270"
-    dst_address: "\272\002\251$"
-    src_port: 12932
-    dst_port: 38600
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200053101
-    key_type: IPV4
-  }
-  reverse_flow_info {
-    start_time: 1388563200053101
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200053101
     sensor_id: "127.0.0.1:5675"
   }
 }
