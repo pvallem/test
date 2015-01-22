@@ -1,9 +1,9 @@
 flow_info {
   key {
-    src_address: "v\340;><\302\345\033\204\023\336\250U|\365\221"
-    dst_address: "\206;\365\342\375\363\324\256z\233\275S,\021\222."
-    src_port: 26854
-    dst_port: 48561
+    src_address: "\313\345%\352I<Q\265ET\222\235\373\230e\224"
+    dst_address: "\226>e6\300\333\222\251\322\304\r,_\363\340\360"
+    src_port: 34496
+    dst_port: 61618
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
@@ -28,21 +28,69 @@ flow_info {
 }
 flow_info {
   key {
-    src_address: "\223\014\230\323\017?\335\353\366\221\202\005\316\251\272\372"
-    dst_address: "\322T\377\357\267\206\r#t\241W\247\247\304$\321"
-    src_port: 14889
-    dst_port: 43406
+    src_address: "\271\365\037)\367q\005\222\230\271\343\365\372\204\360\027"
+    dst_address: "\272\330\323\230RF\321?\333;\374\261\231\260\370\236"
+    src_port: 20812
+    dst_port: 4940
     proto: 6
     tenant_id: 20
-    flow_start_time: 1388563200001000
+    flow_start_time: 1388563200033200
     key_type: IPV6
   }
-  start_time: 1388563200001000
+  start_time: 1388563200033200
   ip_info {
     qos: 0
   }
   flow_features {
     packet_count: 1
   }
-  end_time: 1388563200001000
+  end_time: 1388563200033200
+}
+flow_info {
+  key {
+    src_address: "\313\332\251\252XS\242Q\377\251\023\031\321E\227\263"
+    dst_address: "\204I\034o\255L\276Xh\3135\rt\320-\274"
+    src_port: 44332
+    dst_port: 11177
+    proto: 6
+    tenant_id: 30
+    flow_start_time: 1388563200066400
+    key_type: IPV6
+  }
+  start_time: 1388563200066400
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 20
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200066400
+}
+flow_info {
+  key {
+    src_address: "\313\345%\352I<Q\265ET\222\235\373\230e\224"
+    dst_address: "\253\321\334\223\031\3173K\353\ryl\013 z\010"
+    src_port: 11177
+    dst_port: 29703
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200099600
+    key_type: IPV6
+  }
+  start_time: 1388563200099600
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200099600
 }
