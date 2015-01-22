@@ -1,9 +1,63 @@
 bidir_flow_info {
   key {
-    src_address: "`R\266\013"
-    dst_address: "\311~\346\211"
-    src_port: 4020
-    dst_port: 43686
+    src_address: "q>O\304"
+    dst_address: "\245\017K\374"
+    src_port: 22274
+    dst_port: 56618
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200002000
+    key_type: IPV4
+  }
+  reverse_flow_info {
+    start_time: 1388563200002000
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 20
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200002000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: ".\331\271\322"
+    dst_address: "\226\215z<"
+    src_port: 28766
+    dst_port: 49974
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200003000
+    key_type: IPV4
+  }
+  flow_info {
+    start_time: 1388563200003000
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200003000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: ".\331\271\322"
+    dst_address: "\243\302e\005"
+    src_port: 35768
+    dst_port: 42333
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
@@ -31,12 +85,12 @@ bidir_flow_info {
 }
 bidir_flow_info {
   key {
-    src_address: "\027\3011\372"
-    dst_address: "\027\3011\372"
-    src_port: 13067
-    dst_port: 17291
+    src_address: ")\036W5"
+    dst_address: "\372\n\267\215"
+    src_port: 40698
+    dst_port: 48009
     proto: 6
-    tenant_id: 20
+    tenant_id: 10
     flow_start_time: 1388563200001000
     key_type: IPV4
   }
@@ -49,37 +103,6 @@ bidir_flow_info {
       packet_count: 1
     }
     end_time: 1388563200001000
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "oD5f"
-    dst_address: "\330\033\023\321"
-    src_port: 52246
-    dst_port: 33200
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200002000
-    key_type: IPV4
-  }
-  reverse_flow_info {
-    start_time: 1388563200002000
-    ip_info {
-      last_cached_ttl: 8
-      qos: 0
-    }
-    tcp_info {
-      sequence_num: 20
-      null_flags: 1
-      syn_fin_rst_ack_all_zero: 1
-      option_len_bins {
-      }
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200002000
     sensor_id: "127.0.0.1:5675"
   }
 }
