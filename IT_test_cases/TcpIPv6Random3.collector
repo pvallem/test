@@ -1,0 +1,31 @@
+bidir_flow_info {
+  key {
+    src_address: "0zY\354\301\002\300\355}\006.\231\267dY*"
+    dst_address: "\361\016\007V\t*CV\360\357~\177/\245K\266"
+    src_port: 28189
+    dst_port: 27939
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000000
+    key_type: IPV6
+  }
+  flow_info {
+    start_time: 1388563200000000
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 0
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200000000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
