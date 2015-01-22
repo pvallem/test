@@ -1,0 +1,104 @@
+flow_info {
+  key {
+    src_address: "+j\360S\345c\352z\257Y\356\223\3060\374\202"
+    dst_address: "\216a\035\034\245\3629i\307,\263\010\020\375Zw"
+    src_port: 62084
+    dst_port: 51375
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000000
+    key_type: IPV6
+  }
+  start_time: 1388563200000000
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 0
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200000000
+}
+flow_info {
+  key {
+    src_address: "\001\002\003\004"
+    dst_address: "\005\006\007\010"
+    src_port: 111
+    dst_port: 222
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000010
+    key_type: IPV4
+  }
+  start_time: 1388563200000010
+  ip_info {
+    qos: 0
+  }
+  flow_features {
+    packet_count: 2
+  }
+  end_time: 1388563200000030
+}
+flow_info {
+  key {
+    src_address: "\332/\215\3212y\340+*\3720\n\361\2471\316"
+    dst_address: "\305QI\356C\350K\345\344 \256\004k\254\200\""
+    src_port: 1534
+    dst_port: 24338
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000020
+    key_type: IPV6
+  }
+  start_time: 1388563200000020
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 10
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200000020
+}
+flow_info {
+  key {
+    src_address: "\335\251\3417\301\342\356\337\251\026\245f}\252\r\r"
+    dst_address: "\334\016\007o\262\363\242\363V&\312W\322\235\271\324"
+    src_port: 51375
+    dst_port: 43408
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000040
+    key_type: IPV6
+  }
+  start_time: 1388563200000040
+  ip_info {
+    last_cached_ttl: 8
+    qos: 0
+  }
+  tcp_info {
+    sequence_num: 20
+    null_flags: 1
+    syn_fin_rst_ack_all_zero: 1
+    option_len_bins {
+    }
+  }
+  flow_features {
+    packet_count: 1
+  }
+  end_time: 1388563200000040
+}
