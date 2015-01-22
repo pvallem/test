@@ -1,16 +1,39 @@
 bidir_flow_info {
   key {
-    src_address: "b\263\030\311"
-    dst_address: "\367\214O\253"
-    src_port: 42619
-    dst_port: 59851
+    src_address: "\256V\215s"
+    dst_address: "\324\214\317\205"
+    src_port: 17295
+    dst_port: 58677
+    proto: 6
+    tenant_id: 20
+    flow_start_time: 1388563200081552
+    key_type: IPV4
+  }
+  flow_info {
+    start_time: 1388563200081552
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200081552
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "H7\017\204"
+    dst_address: "\336R$\005"
+    src_port: 20693
+    dst_port: 22143
     proto: 6
     tenant_id: 30
-    flow_start_time: 1388563200114356
+    flow_start_time: 1388563200163104
     key_type: IPV4
   }
   reverse_flow_info {
-    start_time: 1388563200114356
+    start_time: 1388563200163104
     ip_info {
       last_cached_ttl: 8
       qos: 0
@@ -25,207 +48,22 @@ bidir_flow_info {
     flow_features {
       packet_count: 1
     }
-    end_time: 1388563200114356
+    end_time: 1388563200163104
     sensor_id: "127.0.0.1:5675"
   }
 }
 bidir_flow_info {
   key {
-    src_address: "\367\214O\253"
-    dst_address: "\373\0007\276"
-    src_port: 57088
-    dst_port: 14031
-    proto: 6
-    tenant_id: 30
-    flow_start_time: 1388563200285890
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200285890
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200285890
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\003\301\206\375"
-    dst_address: "AB,T"
-    src_port: 23016
-    dst_port: 4402
-    proto: 6
-    tenant_id: 20
-    flow_start_time: 1388563200057178
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200057178
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200057178
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\003\301\206\375"
-    dst_address: "\373\0007\276"
-    src_port: 54742
-    dst_port: 48206
-    proto: 6
-    tenant_id: 20
-    flow_start_time: 1388563200515602
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200515602
-    ip_info {
-      last_cached_ttl: 8
-      qos: 0
-    }
-    tcp_info {
-      sequence_num: 100
-      null_flags: 1
-      syn_fin_rst_ack_all_zero: 1
-      option_len_bins {
-      }
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200515602
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\003\301\206\375"
-    dst_address: "b\263\030\311"
-    src_port: 57925
-    dst_port: 34674
-    proto: 6
-    tenant_id: 20
-    flow_start_time: 1388563200344068
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200344068
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200344068
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\206\35766"
-    dst_address: "\260p@\225"
-    src_port: 54742
-    dst_port: 55321
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200171534
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200171534
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200171534
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\003\301\206\375"
-    dst_address: "\260\215Gx"
-    src_port: 45935
-    dst_port: 47865
-    proto: 6
-    tenant_id: 20
-    flow_start_time: 1388563200228712
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200228712
-    ip_info {
-      last_cached_ttl: 8
-      qos: 0
-    }
-    tcp_info {
-      sequence_num: 40
-      null_flags: 1
-      syn_fin_rst_ack_all_zero: 1
-      option_len_bins {
-      }
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200228712
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "AB,T"
-    dst_address: "\206\35766"
-    src_port: 41039
-    dst_port: 30067
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200286890
-    key_type: IPV4
-  }
-  reverse_flow_info {
-    start_time: 1388563200286890
-    ip_info {
-      last_cached_ttl: 8
-      qos: 0
-    }
-    tcp_info {
-      sequence_num: 60
-      null_flags: 1
-      syn_fin_rst_ack_all_zero: 1
-      option_len_bins {
-      }
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200286890
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\206\35766"
-    dst_address: "\373\0007\276"
-    src_port: 57925
-    dst_port: 17110
+    src_address: "\263}O\275"
+    dst_address: "\325\352\372w"
+    src_port: 12955
+    dst_port: 5122
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
     key_type: IPV4
   }
-  flow_info {
+  reverse_flow_info {
     start_time: 1388563200000000
     ip_info {
       last_cached_ttl: 8
@@ -242,83 +80,6 @@ bidir_flow_info {
       packet_count: 1
     }
     end_time: 1388563200000000
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\206\35766"
-    dst_address: "\260\215Gx"
-    src_port: 59851
-    dst_port: 5355
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200458424
-    key_type: IPV4
-  }
-  flow_info {
-    start_time: 1388563200458424
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200458424
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "AB,T"
-    dst_address: "\367\214O\253"
-    src_port: 17110
-    dst_port: 45935
-    proto: 6
-    tenant_id: 30
-    flow_start_time: 1388563200572780
-    key_type: IPV4
-  }
-  reverse_flow_info {
-    start_time: 1388563200572780
-    ip_info {
-      qos: 0
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200572780
-    sensor_id: "127.0.0.1:5675"
-  }
-}
-bidir_flow_info {
-  key {
-    src_address: "\260p@\225"
-    dst_address: "\367\214O\253"
-    src_port: 54742
-    dst_port: 23016
-    proto: 6
-    tenant_id: 30
-    flow_start_time: 1388563200401246
-    key_type: IPV4
-  }
-  reverse_flow_info {
-    start_time: 1388563200401246
-    ip_info {
-      last_cached_ttl: 8
-      qos: 0
-    }
-    tcp_info {
-      sequence_num: 80
-      null_flags: 1
-      syn_fin_rst_ack_all_zero: 1
-      option_len_bins {
-      }
-    }
-    flow_features {
-      packet_count: 1
-    }
-    end_time: 1388563200401246
     sensor_id: "127.0.0.1:5675"
   }
 }
