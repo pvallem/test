@@ -1,9 +1,9 @@
 bidir_flow_info {
   key {
-    src_address: "0zY\354\301\002\300\355}\006.\231\267dY*"
-    dst_address: "\361\016\007V\t*CV\360\357~\177/\245K\266"
-    src_port: 28189
-    dst_port: 27939
+    src_address: "J\321\014\265C\223\341C*\306_\343&W\315\034"
+    dst_address: "\310\\\345\246\226DDm\t\377\362pK\272\222\317"
+    src_port: 26843
+    dst_port: 24093
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
@@ -26,6 +26,83 @@ bidir_flow_info {
       packet_count: 1
     }
     end_time: 1388563200000000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "J\321\014\265C\223\341C*\306_\343&W\315\034"
+    dst_address: "\243\ry\251\316\245\245b\250\207\220\377\376\353C\201"
+    src_port: 8147
+    dst_port: 32496
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200003000
+    key_type: IPV6
+  }
+  flow_info {
+    start_time: 1388563200003000
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200003000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\213\215\021\202\327\355\321\036WE\232\030\232\033\256\375"
+    dst_address: "\225\000\312*\216\025i2\022\371\376\212Ow\266\003"
+    src_port: 8049
+    dst_port: 58444
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200002000
+    key_type: IPV6
+  }
+  reverse_flow_info {
+    start_time: 1388563200002000
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 20
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200002000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\217\246\'\305\272\273\300\363AlYQ\304w\333\215"
+    dst_address: "\356\343\214H\322*x{\256j(3\367G\326("
+    src_port: 25018
+    dst_port: 1716
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200001000
+    key_type: IPV6
+  }
+  reverse_flow_info {
+    start_time: 1388563200001000
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200001000
     sensor_id: "127.0.0.1:5675"
   }
 }
