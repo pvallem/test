@@ -1,0 +1,116 @@
+bidir_flow_info {
+  key {
+    src_address: "4v\3324\2724.a\206e\217\002\337\377P\250"
+    dst_address: "4v\3324\2724.a\206e\217\002\337\377P\250"
+    src_port: 25670
+    dst_port: 15049
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000000
+    key_type: IPV6
+  }
+  flow_info {
+    start_time: 1388563200000000
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 0
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200000000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\031\257\244\252\2223\212\353\273A\243<j \014n"
+    dst_address: "\272[\217\240\020\245\227W\333\212\200\205I\3531d"
+    src_port: 25732
+    dst_port: 21941
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000040
+    key_type: IPV6
+  }
+  reverse_flow_info {
+    start_time: 1388563200000040
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 20
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200000040
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "D\251P!s\234\324-U8%\243\032_9\234"
+    dst_address: "IYi9\220\3279:\205p\247\251T\371\177\373"
+    src_port: 7339
+    dst_port: 55070
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000020
+    key_type: IPV6
+  }
+  flow_info {
+    start_time: 1388563200000020
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 10
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200000020
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\001\002\003\004\000\000\000\000\000\000\000\000\000\000\000\000"
+    dst_address: "\005\006\007\010\000\000\000\000\000\000\000\000\000\000\000\000"
+    src_port: 111
+    dst_port: 222
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000010
+    key_type: IPV6
+  }
+  flow_info {
+    start_time: 1388563200000010
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 2
+    }
+    end_time: 1388563200000030
+    sensor_id: "127.0.0.1:5675"
+  }
+}

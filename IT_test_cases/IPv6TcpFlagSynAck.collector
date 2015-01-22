@@ -1,15 +1,15 @@
 bidir_flow_info {
   key {
-    src_address: "\005\006\007\010\000\000\000\000\000\000\000\000\000\000\000\000"
-    dst_address: "\001\002\003\004\000\000\000\000\000\000\000\000\000\000\000\000"
-    src_port: 222
-    dst_port: 111
+    src_address: "\001\002\003\004\000\000\000\000\000\000\000\000\000\000\000\000"
+    dst_address: "\005\006\007\010\000\000\000\000\000\000\000\000\000\000\000\000"
+    src_port: 111
+    dst_port: 222
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
     key_type: IPV6
   }
-  reverse_flow_info {
+  flow_info {
     start_time: 1388563200000000
     ip_info {
       last_cached_ttl: 8
@@ -17,8 +17,8 @@ bidir_flow_info {
     }
     tcp_info {
       accumulated_flags {
-        syn: 1
-        ack: 1
+        syn: 2
+        ack: 2
       }
       sequence_num: 40
       ack_num: 0
