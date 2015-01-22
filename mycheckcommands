@@ -9,8 +9,9 @@ cp ~/test/sensor_model.py ~/tetration/tools/sensor_model/
 cd ~/tetration/test_framework/src/integration_test/
 python generate_ITtest_cases.py -t ./templates/Test_config_template -r ./templates/remove_fields_list.protobuf -p integration_tests.protobuf
 rm -rf ~/test/IT_test_cases
-cp -r ~/tetration/test_framework/src/integration_test/IT_test_case ~/test/.
-cd ~/test
+cd ~/test/
+git rm IT_test_cases/*
+cp -r ~/tetration/test_framework/src/integration_test/IT_test_cases ~/test/.
 git add .
 git commit -m "new test cases"
 git push
