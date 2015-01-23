@@ -1,0 +1,108 @@
+bidir_flow_info {
+  key {
+    src_address: "s\216\371\024"
+    dst_address: "\264\246;\376"
+    src_port: 13832
+    dst_port: 34856
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200000000
+    key_type: IPV4
+  }
+  reverse_flow_info {
+    start_time: 1388563200000000
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 0
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200000000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "IN\243\252"
+    dst_address: "\323\323`\310"
+    src_port: 56071
+    dst_port: 23029
+    proto: 6
+    tenant_id: 20
+    flow_start_time: 1388563200001000
+    key_type: IPV4
+  }
+  flow_info {
+    start_time: 1388563200001000
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200001000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "PR\373*"
+    dst_address: "\264\246;\376"
+    src_port: 39475
+    dst_port: 25580
+    proto: 6
+    tenant_id: 10
+    flow_start_time: 1388563200003000
+    key_type: IPV4
+  }
+  reverse_flow_info {
+    start_time: 1388563200003000
+    ip_info {
+      qos: 0
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200003000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
+bidir_flow_info {
+  key {
+    src_address: "\025\371Mn"
+    dst_address: "y\tcE"
+    src_port: 26277
+    dst_port: 23172
+    proto: 6
+    tenant_id: 30
+    flow_start_time: 1388563200002000
+    key_type: IPV4
+  }
+  flow_info {
+    start_time: 1388563200002000
+    ip_info {
+      last_cached_ttl: 8
+      qos: 0
+    }
+    tcp_info {
+      sequence_num: 20
+      null_flags: 1
+      syn_fin_rst_ack_all_zero: 1
+      option_len_bins {
+      }
+    }
+    flow_features {
+      packet_count: 1
+    }
+    end_time: 1388563200002000
+    sensor_id: "127.0.0.1:5675"
+  }
+}
