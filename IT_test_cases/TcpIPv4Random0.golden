@@ -1,9 +1,9 @@
 flow_info {
   key {
-    src_address: "\003NDD"
-    dst_address: "\305\310|`"
-    src_port: 60106
-    dst_port: 14194
+    src_address: "\335\276$\266"
+    dst_address: "\334<h`"
+    src_port: 16091
+    dst_port: 22538
     proto: 6
     tenant_id: 10
     flow_start_time: 1388563200000000
@@ -28,36 +28,36 @@ flow_info {
 }
 flow_info {
   key {
-    src_address: "\2317\300\177"
-    dst_address: "\r\010\t\266"
-    src_port: 58917
-    dst_port: 31557
+    src_address: "\264[\017w"
+    dst_address: "\331X\327\200"
+    src_port: 31496
+    dst_port: 160
     proto: 6
     tenant_id: 10
-    flow_start_time: 1388563200074210
+    flow_start_time: 1388563200001000
     key_type: IPV4
   }
-  start_time: 1388563200074210
+  start_time: 1388563200001000
   ip_info {
     qos: 0
   }
   flow_features {
     packet_count: 1
   }
-  end_time: 1388563200074210
+  end_time: 1388563200001000
 }
 flow_info {
   key {
-    src_address: "\364xV+"
-    dst_address: "y\304\263\322"
-    src_port: 35553
-    dst_port: 1394
+    src_address: "Q\227m\250"
+    dst_address: "WOf\245"
+    src_port: 22008
+    dst_port: 63708
     proto: 6
     tenant_id: 10
-    flow_start_time: 1388563200148420
+    flow_start_time: 1388563200002000
     key_type: IPV4
   }
-  start_time: 1388563200148420
+  start_time: 1388563200002000
   ip_info {
     last_cached_ttl: 8
     qos: 0
@@ -72,53 +72,5 @@ flow_info {
   flow_features {
     packet_count: 1
   }
-  end_time: 1388563200148420
-}
-flow_info {
-  key {
-    src_address: "\003NDD"
-    dst_address: "\"(u\371"
-    src_port: 26192
-    dst_port: 26591
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200222630
-    key_type: IPV4
-  }
-  start_time: 1388563200222630
-  ip_info {
-    qos: 0
-  }
-  flow_features {
-    packet_count: 1
-  }
-  end_time: 1388563200222630
-}
-flow_info {
-  key {
-    src_address: "\2317\300\177"
-    dst_address: "Fr\253\226"
-    src_port: 48220
-    dst_port: 46990
-    proto: 6
-    tenant_id: 10
-    flow_start_time: 1388563200296840
-    key_type: IPV4
-  }
-  start_time: 1388563200296840
-  ip_info {
-    last_cached_ttl: 8
-    qos: 0
-  }
-  tcp_info {
-    sequence_num: 40
-    null_flags: 1
-    syn_fin_rst_ack_all_zero: 1
-    option_len_bins {
-    }
-  }
-  flow_features {
-    packet_count: 1
-  }
-  end_time: 1388563200296840
+  end_time: 1388563200002000
 }
