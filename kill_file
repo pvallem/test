@@ -1,2 +1,6 @@
 # empty file
-ls
+ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
+ps -ef | grep Collector
+exit
+EOF1
+
