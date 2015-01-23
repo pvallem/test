@@ -1,5 +1,5 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-cat /var/log/load_test/load_test_20150123_010322.log
+/local/load_test/Collector --config_file=/local/load_test/collector_proto.config
 exit
 EOF1
