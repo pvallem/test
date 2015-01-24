@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
-ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-java -jar jenkins-cli.jar -s  http://jenkins-vm.tetrationanalytics.com:8080 build CollectorLoadTest
-sleep 5
+ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
+cd /local/load_test/results
+ls -ltr
 exit
 EOF1
