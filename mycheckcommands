@@ -1,7 +1,8 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-sed -i 's/rcv_port/udp_rcv_port/g' /local/load_test/collector_proto.config
-/local/load_test/Collector --config_file=/local/load_test/collector_proto.config &
+cd /local/load_test
+./Collector --config_file=/local/load_test/collector_proto.config &
 sleep 5
+ps -ef | grep Collector
 exit
 EOF1
