@@ -1,6 +1,6 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 cd /local/jenkins/workspace/CollectorLoadTest/test_framework/src/load_test/
-python collector_load_tester.py -f /local/load_test/loadtest.config
+cat  /var/log/load_test/load_test_20150124_032220.log
 exit
 EOF1
