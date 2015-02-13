@@ -1,5 +1,5 @@
 # Here i will write the commands which newly learnt
-ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-cat /local/load_test/results/load_test_results_20150124_073526
+ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
+df -h
 exit
 EOF1
