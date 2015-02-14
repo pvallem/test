@@ -1171,43 +1171,37 @@ class FlowTable(object):
         field_name = "bin%d" % (len(buckets) + 1)
         setattr(sixteen_bins, field_name, 1)
 
+
+    @classmethod
+    def update_given_tcp_flag(cls, flag):
+        """ Updates the tcp flag as per the mode. Asic sensor simply uses a
+        boolean value for telling if a given tcp flag is seen. But Software
+        sensor counts the number of times each flag is seen."""
+        if FLAGS.asic_mode:
+            flag = 1
+        else:
+            flag += 1
+
+
     @classmethod
     def update_accumulated_tcp_flags(cls, tcp, tcp_info):
         """TCP flags from the packet."""
-        if FLAGS.asic_mode:
-            if tcp.flags & dpkt.tcp.TH_FIN:
-                tcp_info.accumulated_flags.fin = 1
-            if tcp.flags & dpkt.tcp.TH_SYN:
-                tcp_info.accumulated_flags.syn = 1
-            if tcp.flags & dpkt.tcp.TH_RST:
-                tcp_info.accumulated_flags.rst = 1
-            if tcp.flags & dpkt.tcp.TH_PUSH:
-                tcp_info.accumulated_flags.psh = 1
-            if tcp.flags & dpkt.tcp.TH_ACK:
-                tcp_info.accumulated_flags.ack = 1
-            if tcp.flags & dpkt.tcp.TH_URG:
-                tcp_info.accumulated_flags.urg = 1
-            if tcp.flags & dpkt.tcp.TH_ECE:
-                tcp_info.accumulated_flags.ece = 1
-            if tcp.flags & dpkt.tcp.TH_CWR:
-                tcp_info.accumulated_flags.cwr = 1
-        else:
-            if tcp.flags & dpkt.tcp.TH_FIN:
-                tcp_info.accumulated_flags.fin += 1
-            if tcp.flags & dpkt.tcp.TH_SYN:
-                tcp_info.accumulated_flags.syn += 1
-            if tcp.flags & dpkt.tcp.TH_RST:
-                tcp_info.accumulated_flags.rst += 1
-            if tcp.flags & dpkt.tcp.TH_PUSH:
-                tcp_info.accumulated_flags.psh += 1
-            if tcp.flags & dpkt.tcp.TH_ACK:
-                tcp_info.accumulated_flags.ack += 1
-            if tcp.flags & dpkt.tcp.TH_URG:
-                tcp_info.accumulated_flags.urg += 1
-            if tcp.flags & dpkt.tcp.TH_ECE:
-                tcp_info.accumulated_flags.ece += 1
-            if tcp.flags & dpkt.tcp.TH_CWR:
-                tcp_info.accumulated_flags.cwr += 1
+        if tcp.flags & dpkt.tcp.TH_FIN:
+            update_given_tcp_flag(tcp_info.accumulated_flags.fin)
+        if tcp.flags & dpkt.tcp.TH_SYN:
+            update_given_tcp_flag(tcp_info.accumulated_flags.syn)
+        if tcp.flags & dpkt.tcp.TH_RST:
+            update_given_tcp_flag(tcp_info.accumulated_flags.rst)
+        if tcp.flags & dpkt.tcp.TH_PUSH:
+            update_given_tcp_flag(tcp_info.accumulated_flags.psh)
+        if tcp.flags & dpkt.tcp.TH_ACK:
+            update_given_tcp_flag(tcp_info.accumulated_flags.ack)
+        if tcp.flags & dpkt.tcp.TH_URG:
+            update_given_tcp_flag(tcp_info.accumulated_flags.urg)
+        if tcp.flags & dpkt.tcp.TH_ECE:
+            update_given_tcp_flag(tcp_info.accumulated_flags.ece)
+        if tcp.flags & dpkt.tcp.TH_CWR:
+            update_given_tcp_flag(tcp_info.accumulated_flags.cwr)
 
     @classmethod
     def within_wrapped_range(cls, num, low, high):
