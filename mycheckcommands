@@ -1,20 +1,3 @@
 # Here i will write the commands which newly learnt
-ssh -t -t tetter@pvallem-vm.tetrationanalytics.com << EOF1
-cd test
-git pull
-cd ~/tetration
-git pull
-cp ~/test/generate_ITtest_cases.py ~/tetration/test_framework/src/integration_test/
-cp ~/test/sensor_model.py ~/tetration/tools/sensor_model/
-cd ~/tetration/test_framework/src/integration_test/
-python generate_ITtest_cases.py -t ./templates/Test_config_template -r ./templates/remove_fields_list.protobuf -p integration_tests.protobuf
-rm -rf ~/test/IT_test_cases
-cd ~/test/
-git rm IT_test_cases/*
-cp -r ~/tetration/test_framework/src/integration_test/IT_test_cases ~/test/.
-git add .
-git commit -m "new test cases"
-git push
-exit
-EOF1
+ls
 
