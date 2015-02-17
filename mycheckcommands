@@ -1,5 +1,6 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-ls -ltr /var/log/integration_test
+sudo rm /var/log/integration_test
+sudo mkdir -p /var/log/integration_test
 exit
 EOF1
