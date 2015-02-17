@@ -2,5 +2,6 @@
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
 sudo rm /var/log/integration_test
 sudo mkdir -p /var/log/integration_test
+sudo chmod 777 /var/log/integration_test
 exit
 EOF1
