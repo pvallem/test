@@ -1,2 +1,5 @@
 # Here i will write the commands which newly learnt
-ls
+ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
+ls -ltr /var/log/integration_test
+exit
+EOF1
