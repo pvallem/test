@@ -1,6 +1,5 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-sudo mount jenkins-load-test.tetrationanalytics.com:/local/integration_test_logs /var/log/integration_test
-echo $?
+ls -ltr /var/log/integration_test
 exit
 EOF1
