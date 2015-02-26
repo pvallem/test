@@ -2,7 +2,6 @@
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
 cd
 java -jar jenkins-cli.jar -s http://jenkins-vm.tetrationanalytics.com:8080 build 'CollectorLoadTest' -s
-echo $?
 cat `ls -ltr /local/load_test/results/* | tail -1 | awk '{print $9}'`
 exit
 EOF1
