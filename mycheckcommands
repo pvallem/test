@@ -1,7 +1,8 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-cd
-java -jar jenkins-cli.jar -s http://jenkins-vm.tetrationanalytics.com:8080 build 'CollectorLoadTest' -s
-cat `ls -ltr /local/load_test/results/* | tail -1 | awk '{print $9}'`
+# cd
+# java -jar jenkins-cli.jar -s http://jenkins-vm.tetrationanalytics.com:8080 build 'CollectorLoadTest' -s
+# cat `ls -ltr /local/load_test/results/* | tail -1 | awk '{print $9}'`
+cat /var/log/integration_test/latest_html_file
 exit
 EOF1
