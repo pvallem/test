@@ -3,6 +3,6 @@ ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
 # cd
 # java -jar jenkins-cli.jar -s http://jenkins-vm.tetrationanalytics.com:8080 build 'CollectorLoadTest' -s
 # cat `ls -ltr /local/load_test/results/* | tail -1 | awk '{print $9}'`
-virsh pool-list --all
+sudo find / -name lv_pvallem
 exit
 EOF1
