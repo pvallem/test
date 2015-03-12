@@ -1,6 +1,6 @@
 # empty file
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-ps -ef | grep Collector
+ps -ef | grep -i 'collaberative'
 exit
 EOF1
 
