@@ -5,6 +5,7 @@ import os, sys
 import threading
 import time
 import numpy as np
+import math
 
 
 class CollaberiveFilter(object):
@@ -97,7 +98,7 @@ class CollaberiveFilter(object):
             den1 += user1_diff*user1_diff
             den2 += user2_diff*user2_diff
             
-        den = np.sqrt(den1*den2)
+        den = math.sqrt(den1*den2)
         if str(den) == "nan":
             print str(den) + " is denominator."
         if den != 0:
@@ -135,8 +136,10 @@ class CollaberiveFilter(object):
         if weightSum == 0:
             weightSum = 1
         sum = round((1.0*sum/weightSum), 3)
-        # print str(sum) + " is sum."
+        print str(sum) + " is sum."
         rating = self.user_means[userid] + sum
+        if abs(rating) > 5:
+            return rating % 5
         return rating
         
     def claculate_error(self, start, end, errors):
@@ -149,14 +152,14 @@ class CollaberiveFilter(object):
             movieid = self.movies[int(self.test_ratings[i][0])]
             userid = self.users[int(self.test_ratings[i][1])]
             expected_rating = self.predict_rating(userid, movieid)
-            # print str(expected_rating) + " is predicted rating for " + str(self.test_ratings[i][0]) +\
-                # " movie by user " + str(int(self.test_ratings[i][1])) + " where actual rating is " +\
-                # str(int(self.test_ratings[i][2]))
+            print str(expected_rating) + " is predicted rating for " + str(self.test_ratings[i][0]) +\
+                " movie by user " + str(int(self.test_ratings[i][1])) + " where actual rating is " +\
+                str(int(self.test_ratings[i][2]))
             error = abs(int(self.test_ratings[i][2]) - expected_rating)
             MAE = MAE + error
             RMSE = RMSE + error * error
             i += 1
-            if i % 1000 == 0:
+            if i % 10 == 0:
                 print "{0} records processing finished, MAE: {1}, RMSE: {2}".format(i, MAE, RMSE)
         errors.append((MAE, RMSE))
 
@@ -167,39 +170,39 @@ class CollaberiveFilter(object):
         RMSE = 0
         start = 0
         error_list = []
-        #thread_list = []
-        #no_threads = 20
+        thread_list = []
+        no_threads = 20
         total_tests = len(self.test_ratings)
-        #sub_tests = total_tests/no_threads
-        #end = sub_tests - 1
-        #while start < total_tests:
-        #    if end >= total_tests:
-        #        end = total_tests - 1
-        #        n = no_threads
-        #    error = []
-        #    error_list.append(error)
-        #    t = threading.Thread(target=self.claculate_error, args=(start, end, error))
-        #    t.run()
-        #    thread_list.append(t)
-        #    start += sub_tests
-        #    end += sub_tests
+        sub_tests = total_tests/no_threads
+        end = sub_tests - 1
+        while start < total_tests:
+            if end >= total_tests:
+                end = total_tests - 1
+                n = no_threads
+            error = []
+            error_list.append(error)
+            t = threading.Thread(target=self.claculate_error, args=(start, end, error))
+            t.run()
+            thread_list.append(t)
+            start += sub_tests
+            end += sub_tests
             
         # wait untiul all the therads are Finished.
-        #for t in thread_list:
-        #    try:
-        #        t.join()
-        #    except:
-        #        continue
+        for t in thread_list:
+            try:
+                t.join()
+            except:
+                continue
 
-        error = []
-        error_list.append(error)
-        self.claculate_error(0, total_tests - 1, error)
+        #error = []
+        #error_list.append(error)
+        #self.claculate_error(0, total_tests - 1, error)
             
         for error in error_list:
             MAE += error[0][0]
             RMSE += error[0][1]
         MAE = MAE/total_tests
-        RMSE = np.sqrt(RMSE/total_tests)
+        RMSE = math.sqrt(RMSE/total_tests)
         return MAE, RMSE
 
 def main():
