@@ -78,8 +78,14 @@ class CollaberiveFilter(object):
         
     def get_weight(self, user1, user2):
         """ Returns the correlation weight between user1 and user2."""
-        #if (user1, user2) in self.weights:
-        #    return self.weights[(user1, user2)]
+        if user1 > user2:
+            a = user1
+            b = user2
+        else:
+            a = user2
+            b = user1
+        if (a, b) in self.weights:
+            return self.weights[(a, b)]
 
         num = 0
         den1 = 0
@@ -102,7 +108,7 @@ class CollaberiveFilter(object):
         if weight is np.nan:
             weight = 0
             print str(weight) + " is weight for users " +  str(user1) + " " + str(user2) 
-        # self.weights[(user1, user2)] = weight
+        self.weights[(a, b)] = weight
         return weight
 
     def set_test_ratings(self):
