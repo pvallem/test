@@ -1,6 +1,6 @@
 # empty file
 ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-ps -ef | grep -i 'collabartive_filtering.py'
+kill -9 13055 3648
 exit
 EOF1
 
