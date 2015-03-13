@@ -136,7 +136,7 @@ class CollaberiveFilter(object):
         if weightSum == 0:
             weightSum = 1
         sum = round((1.0*sum/weightSum), 3)
-        print str(sum) + " is sum."
+        # print str(sum) + " is sum."
         rating = self.user_means[userid] + sum
         if abs(rating) > 5:
             return rating % 5
@@ -152,14 +152,14 @@ class CollaberiveFilter(object):
             movieid = self.movies[int(self.test_ratings[i][0])]
             userid = self.users[int(self.test_ratings[i][1])]
             expected_rating = self.predict_rating(userid, movieid)
-            print str(expected_rating) + " is predicted rating for " + str(self.test_ratings[i][0]) +\
-                " movie by user " + str(int(self.test_ratings[i][1])) + " where actual rating is " +\
-                str(int(self.test_ratings[i][2]))
+            #print str(expected_rating) + " is predicted rating for " + str(self.test_ratings[i][0]) +\
+            #    " movie by user " + str(int(self.test_ratings[i][1])) + " where actual rating is " +\
+            #    str(int(self.test_ratings[i][2]))
             error = abs(int(self.test_ratings[i][2]) - expected_rating)
             MAE = MAE + error
             RMSE = RMSE + error * error
             i += 1
-            if i % 10 == 0:
+            if i % 1000 == 0:
                 print "{0} records processing finished, MAE: {1}, RMSE: {2}".format(i, MAE, RMSE)
         errors.append((MAE, RMSE))
 
