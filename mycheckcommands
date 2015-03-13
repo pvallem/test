@@ -1,8 +1,2 @@
 # Here i will write the commands which newly learnt
-scp collbarative_filtering/* jenkins@jenkins-load-test.tetrationanalytics.com:/local/load_test
-ssh -t -t jenkins@jenkins-load-test.tetrationanalytics.com << EOF1
-cd /local/load_test
-python collabartive_filtering.py -tr ./TrainingRatings.txt -te ./TestingRatings.txt
-exit
-EOF1
-
+ls
