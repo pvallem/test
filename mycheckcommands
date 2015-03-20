@@ -3,7 +3,7 @@ ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
 cd
 cd jobs
 cd 'HOURLY SANITY'
-sed -i "s/\<disabled\>false\<\/disabled\>/\<disabled\>true\<\/disabled\>/g" config.xml
+sed -i "s/<disabled>false<\/disabled>/<disabled>true<\/disabled>/g" config.xml
 cat config.xml
 exit
 EOF1
