@@ -1,6 +1,5 @@
 # Here i will write the commands which newly learnt
 ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF1
-cd /local/jenkins/workspace/ADMUnitTest/app-dependency
-export PYTHONPATH=/local/jenkins/workspace/ADMUnitTest/third_party/protobuf_json:/local/jenkins/workspace/ADMUnitTest/app-dependency
+ls -ltr /local/load_test/
 exit
 EOF1
