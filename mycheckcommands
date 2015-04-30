@@ -1,9 +1,5 @@
 # Here i will write the commands which newly learnt
-ssh -t -t jenkins@jenkins-vm.tetrationanalytics.com << EOF
 sudo -i
 export https_proxy=https://proxy.esl.cisco.com:8080 
 export http_proxy=http://proxy.esl.cisco.com:8080 
 easy_install -U tzlocal
-exit
-exit
-EOF1
